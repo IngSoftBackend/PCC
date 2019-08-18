@@ -1,12 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="EG-PROYECT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../css/bootstrap.3.3.7.css" />
+    <link rel="stylesheet" href="../../../css/font-awesome.css" />
+    <link rel="stylesheet" href="../../../css/estilos.css" />
+    <script src="../../../ext/angular.1.7.8.min.js"></script>
+    <script src="../../js/backend/ctrl.cv.ericklopez.js"></script>
     <title>.: Erick Gallardo :.</title>
 </head>
-<body>
-    Erick
+
+<body ng-controller="inicial">
+    <div class="col-lg-12 m-t10">
+        <div class="col-lg-12">
+            <div class="col-lg-1">
+                <img class="img-fluid img-thumbnail" src="../../img/1467646262_522853_1467646344_noticia_normal.jpg" alt="mi foto">
+            </div>
+            <div class="col-lg-5">
+                <table class="table table-bordered">
+                    <thead class="bg-red">
+                        <tr>
+                            <th colspan="2" class="text-center">Información personal ...</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Nombre completo: </th>
+                            <td>{{infoPersonal.nombre}}</td>
+                        </tr>
+                        <tr>
+                            <th>Nivel académica : </th>
+                            <td>{{infoPersonal.titulo}}</td>
+                        <tr>
+                        <tr>
+                            <th>Correo electronico : </th>
+                            <td>{{infoPersonal.correo}}</td>
+                        <tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6">
+                <table class="table table-bordered">
+                    <thead class="bg-orange">
+                        <tr>
+                            <th colspan="2" class="text-center">Habilidades ...</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Trabajo en equipo</li>
+                                    <li>Responsabilidad</li>
+                                    <li>Puntualidad</li>
+                                    <li>Proactivo</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Trabajo en equipo</li>
+                                    <li>Responsabilidad</li>
+                                    <li>Puntualidad</li>
+                                    <li>Proactivo</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <table class="table table-bordered">
+                <thead class="bg-blue">
+                <tr>
+                    <th colspan="4" class="text-center">Experiencia laboral ...</th>
+                </tr>
+                <tr>
+                    <th class="text-center">Puesto</th>
+                    <th class="text-center">Descripción</th>
+                    <th class="text-center">Duración</th>
+                    <th class="text-center">Herramientas</th>
+                </tr>
+            </thead>
+                <tr ng-repeat="obj in experiencias">
+                    <td>{{obj.trabajo}}</td>
+                    <td>{{obj.descripcion}}</td>
+                    <td  class="text-center">{{obj.duracion}} Año</td>
+                    <td><span ng-repeat="item in obj.herramientas">{{item}}, </span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-5">
+            <table class="table table-bordered">
+            <thead class="bg-green">
+                <tr>
+                    <th class="text-center">Conocimientos ...</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <i ng-repeat="exp in conocimientos">{{$index+1}}.- {{exp}}, </i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
 </body>
+
 </html>
