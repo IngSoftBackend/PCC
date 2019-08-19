@@ -2,7 +2,7 @@
 Este proyecto se genero como practica de git para así poner lo aprendido en el curso de git.
   
 ![450_1000.png](https://i.blogs.es/672fa7/git-logo/450_1000.png)
-
+## Es necesario trabajar en la rama de DEVELOP importante!
 ## Guia:
 Es importante seguir las siguientes reglas:
   1. Los integrantes del repositorio deberan de cargar  sus **CV** en una pagina html
