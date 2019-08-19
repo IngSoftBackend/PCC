@@ -1,3 +1,19 @@
+.flag-size{
+    height: 2vh;
+    width: 3vh;
+}
+.p{
+    padding : 0;
+}
+.p-10{
+    padding-top : 10px;
+}
+.m{
+    margin : 0;
+}
+.b{
+    border : 0;
+}
 .m-t10{
     margin-top: 5vh;
 }

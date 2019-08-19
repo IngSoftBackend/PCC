@@ -7,23 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../../css/bootstrap.3.3.7.css" />
     <link rel="stylesheet" href="../../../css/font-awesome.css" />
+    <link rel="stylesheet" href="../../../css/ngToast-animations.css" />
     <link rel="stylesheet" href="../../../css/estilos.css" />
+
     <script src="../../../ext/angular.1.7.8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.8/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-animate.js"></script>
+    <script src="../../../ext/ngToast.js"></script>
     <script src="../../js/backend/ctrl.cv.ericklopez.js"></script>
     <title>.: Erick Gallardo :.</title>
 </head>
 
 <body ng-controller="inicial">
-    <div class="col-lg-12 m-t10">
+    <!-- <toast></toast> -->
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <div class="navbar  navbar-inverse navbar-default navbar-fixed-top" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="../../../index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="col-lg-12 ">
         <div class="col-lg-12">
             <div class="col-lg-1">
-                <img class="img-fluid img-thumbnail" src="../../img/1467646262_522853_1467646344_noticia_normal.jpg" alt="mi foto">
+                <img class="img-fluid img-thumbnail" src="../../img/1467646262_522853_1467646344_noticia_normal.jpg"
+                    alt="mi foto">
             </div>
             <div class="col-lg-5">
                 <table class="table table-bordered">
                     <thead class="bg-red">
                         <tr>
-                            <th colspan="2" class="text-center">Información personal ...</th>
+                            <th colspan="2" class="text-center"> <i class="fa fa-info"></i> Información personal ...
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,7 +65,7 @@
                 <table class="table table-bordered">
                     <thead class="bg-orange">
                         <tr>
-                            <th colspan="2" class="text-center">Habilidades ...</th>
+                            <th colspan="2" class="text-center"> <i class="fa fa-ravelry "></i> Habilidades ...</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -61,10 +80,8 @@
                             </td>
                             <td>
                                 <ul>
-                                    <li>Trabajo en equipo</li>
-                                    <li>Responsabilidad</li>
-                                    <li>Puntualidad</li>
-                                    <li>Proactivo</li>
+                                    <li>Análisis</li>
+                                    <li>Diseño</li>
                                 </ul>
                             </td>
                         </tr>
@@ -72,43 +89,48 @@
                 </table>
             </div>
         </div>
-
-        <div class="col-lg-7">
-            <table class="table table-bordered">
-                <thead class="bg-blue">
-                <tr>
-                    <th colspan="4" class="text-center">Experiencia laboral ...</th>
-                </tr>
-                <tr>
-                    <th class="text-center">Puesto</th>
-                    <th class="text-center">Descripción</th>
-                    <th class="text-center">Duración</th>
-                    <th class="text-center">Herramientas</th>
-                </tr>
-            </thead>
-                <tr ng-repeat="obj in experiencias">
-                    <td>{{obj.trabajo}}</td>
-                    <td>{{obj.descripcion}}</td>
-                    <td  class="text-center">{{obj.duracion}} Año</td>
-                    <td><span ng-repeat="item in obj.herramientas">{{item}}, </span></td>
-                </tr>
-            </table>
-        </div>
-        <div class="col-lg-5">
-            <table class="table table-bordered">
-            <thead class="bg-green">
-                <tr>
-                    <th class="text-center">Conocimientos ...</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <i ng-repeat="exp in conocimientos">{{$index+1}}.- {{exp}}, </i>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="col-lg-12">
+            <div class="col-lg-7">
+                <table class="table table-bordered">
+                    <thead class="bg-blue">
+                        <tr>
+                            <th colspan="4" class="text-center"> <i class="fa fa-book"></i> Experiencia laboral ...</th>
+                        </tr>
+                        <tr>
+                            <th class="text-center">Puesto</th>
+                            <th class="text-center">Descripción</th>
+                            <th class="text-center">Duración</th>
+                            <th class="text-center">Herramientas</th>
+                        </tr>
+                    </thead>
+                    <tr ng-repeat="obj in infoPersonal.experiencias">
+                        <td>{{obj.trabajo}}</td>
+                        <td>{{obj.descripcion}}</td>
+                        <td class="text-center"> <strong>{{obj.duracion}}</strong> Año</td>
+                        <td><span ng-repeat="item in obj.herramientas">{{item}}, </span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-5">
+                <table class="table table-bordered">
+                    <thead class="bg-green">
+                        <tr>
+                            <th colspan="2" class="text-center"> <i class="fa fa-lightbulb-o"></i> Conocimientos ...
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center">Tipo</th>
+                            <th class="text-center">Herramientas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="exp in infoPersonal.conocimientos" class="p m b">
+                            <th>{{exp.tipo}}</th>
+                            <td><span ng-repeat="itm in exp.herramientas">{{itm + ', '}}</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
