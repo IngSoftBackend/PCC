@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang='es'>
+    
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='icon'  type='image.jpg'  href='../../img/frontend/cristhianl/perfil.jpg'>
+        <script src="https://kit.fontawesome.com/3965e59339.js"></script>
+        <link rel="stylesheet" href="../../css/frontend/css.cv.cristhianlaurente.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+        <title>Cristhian Laurente</title>
+    </head>
+    
+    <body>        
+        
+        <div class="contenedor">
+            <header>
+                <div class="logo">
+                    <h1>Cristhian Laurente</h1>
+                    <p>Desarrollador Frontend - Diseñador Grafico - Bailarin</p>
+                </div>
+                <form action="">
+                    <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar" >
+                </form>
+                <div class="categorias" id="categorias">
+                    <a href="#" class="activo">Todos</a>
+                    <a href="#">Grupo</a>
+                    <a href="#">Youtube</a>
+                    <a href="#">Diseño</a>
+                    <a href="#">Baile</a>
+                </div>
+            </header>
+
+
+            <section class="grid" id="grid">
+                <div class="item" 
+                     data-categoria="diseño" 
+                     data-etiquetas="diseños graficos flyers publicidades experiencia"
+                     data-descripcion="1.-Diseñador Grafico Student Autodidacta"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/diseño2.jpg">
+                    </div>
+                </div>
+                <div class="item" 
+                     data-categoria="youtube" 
+                     data-etiquetas="youtube canal programacion experiencia"
+                     data-descripcion="Creador de Contenido en Youtube - Canal Personal, Experiencia en HTML, CSS y JS"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/youtube.jpg">
+                    </div>
+                </div>
+                <div class="item" 
+                     data-categoria="baile" 
+                     data-etiquetas="baile danza urbano coreografo instructor"
+                     data-descripcion="Winner en DanceHall 2018"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/baile.jpg">
+                    </div>
+                </div>
+                <div class="item" 
+                     data-categoria="baile" 
+                     data-etiquetas="robotlet baile fiesta eventos pasatiempo"
+                     data-descripcion="Robotlet para Eventos (Fiestas)"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/robotlet.jpg">
+                    </div>
+                </div>
+                <div class="item" 
+                     data-categoria="diseño" 
+                     data-etiquetas="robotica placa placas circuito"
+                     data-descripcion="Placa de Circuito Personalizado"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/placa.jpg">
+                    </div>
+                </div>
+                <div class="item" 
+                     data-categoria="baile" 
+                     data-etiquetas="baile danza urbano"
+                     data-descripcion="Instructor de Baile en DanceHall"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/baile1.jpg">
+                    </div>
+                </div>
+                <div class="item" 
+                     data-categoria="diseño" 
+                     data-etiquetas="diseño publicidad flyers"
+                     data-descripcion="Diseñando este flyers ECAT"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/diseño1.jpg">
+                    </div>
+                </div>
+                <div class="item" 
+                     data-categoria="grupo" 
+                     data-etiquetas="perfil inicio personal cristhian laurente cristian"
+                     data-descripcion="Perfil de Redes sociales"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/perfil.jpg">
+                    </div>
+                </div>
+                <div class="item" 
+                     data-categoria="grupo" 
+                     data-etiquetas="grupo pagina frontend comunidades comunidad"
+                     data-descripcion="Perfil del Grupo Blog de un Programador en Facebook"
+                >
+                    <div class="item-contenido">
+                        <img src="../../img/frontend/cristhianl/grupo.jpg">
+                    </div>
+                </div>
+            </section>
+
+            <section class="overlay" id="overlay">
+                <div class="contenedor-img">
+                    <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                    <img src=""  alt="" />
+                </div>
+                <p class="descripcion"></p>
+            </section>
+
+            <footer class="contenedor">
+                <div class="redes-sociales">
+                    <div class="contenedor-icono">
+                        <a href="https://www.youtube.com/channel/UC-UY9InFfxdx2iGFf4NN01g?view_as=subscriber" target="_blank" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a href="https://www.facebook.com/CristhianLaurente.Frontend" target="_blank" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a href="https://github.com/161299" target="_blank" class="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="creado-por">
+                    <p>Sitio diseñado por <a href="#">Cristhian Laurente</a> - <a href="https://www.facebook.com/groups/503590563746045/" target="_blank">Blog de un Programador</a></p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+        <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+        <script src="../../js/frontend/ctrl.cv.cristhianlaurente.js"></script>
+
+    </body>
+    
+</html>
