@@ -1,0 +1,39 @@
+body
+{
+    color: #0f0e11;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecera{
+    background:  rgb(19, 19, 180);
+    box-Shadow: 40px 200px 200px 200p rgba(0, 0, 0,1.s);
+    color: rgba(10, 150, 40, 0.644);
+    font-weight: bold;
+    margin: 0;
+    padding: 1em;
+
+}
+#cabecera {
+    padding: 0 0 0 0.3em;
+    font-weight: normal;
+    font-size: 2em;
+
+
+}
+#container
+{
+    width: 70%;
+    padding: 1em;
+    text-align: left;
+    border: 1px solid #dddddd;
+    margin: 0 auto;
+}
+
+#container h1
+{
+ font-size: 20px;
+}
