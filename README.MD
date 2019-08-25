@@ -12,7 +12,7 @@ Es importante seguir las siguientes reglas:
   5. Si por error se integra mal tienes que informar a los administradores para que solucionen el problema, si en caso contrario no se informa y se continua con la integración sera tomado como acto de mala fe y se aplicara sanción.
   6. Queda prohibido borrar contenido de otros integrantes por **broma o acto de mala fe**, la persona que se detecte haciendo esta actividad sera **eliminado de los grupos**
   7. **_Queda prohibido subir cambios sin avisar antes_**
-  10. **Todos** deben de subir sus cambios a la rama o branch **_feature_**, por lo cual deben sincronizar la rama local y rama remota.
+  10. **Todos** deben de subir sus cambios a la rama o branch **_develop_**, por lo cual deben sincronizar la rama local y rama remota.
 
 
 ## Instrucciones:
