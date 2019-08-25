@@ -1,0 +1,100 @@
+body
+{
+    background: #cccccc;
+    background-size:cover;
+}
+table
+{
+    background: #ffffff;
+}
+tbody + tr
+{
+    background: rgb(27, 177, 89);
+    cursor: pointer;
+}
+.jumbotron
+{
+    background: #000435;/*radial-gradient(#460066,#310047);*/
+    padding-top: 150px; 
+    color: white;
+    transition: all;
+    transition-delay: initial;
+    height: 500px;;
+    /*background: #2f2f2f;*/
+    animation-name: jumbo-animation;
+    animation-duration: 6s;
+}
+@keyframes jumbo-animation
+{
+    from{
+        background: #000435;
+    }
+    to{
+        background: rgb(112, 0, 0);
+    }
+}
+.thead-dark
+{
+    color: white;
+    background: #212529;
+}
+.header
+{
+    color: rgb(29, 29, 29);
+    overflow: hidden;
+    position: relative;
+}
+.header::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    bottom: 0px;
+    background: rgb(27, 177, 89);
+    height: 5px;
+    width: 300px;
+    transition: all;
+    animation-name: header-animation;
+    animation-duration: 5s;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    
+}
+iframe
+{
+    display: block;
+    width: 800px;
+    height:400px;
+    
+}
+@keyframes header-animation
+{
+    0%{
+        left: -300px;
+        background: red
+    }
+    20%
+    {
+        width: 150px;
+    }
+    40%
+    {
+        width: 300px;
+    }
+    60%
+    {
+        width: 150px;
+    }
+    
+    80%
+    {
+        width: 300px;
+    }
+    100%{
+        width: 320px;
+        left:  100%;
+        background:blue;
+    }
+    
+}
