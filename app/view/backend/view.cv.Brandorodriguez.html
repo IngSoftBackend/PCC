@@ -1,12 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Title -->
+  <title>Home | brandom</title>
 </head>
 <body>
-    <h1>Mi cv | Brando rodriguez</h1>
+    <header class="header">
+      <h1 class="header__img">brandom</h1>
+      <div class="header__menu">
+        <div class="header__menu--profile">
+          <span >🍔</span>
+        </div>
+        <ul>
+          <li><a href="#skill">Skil</a></li>
+          <li><a href="#Proyectos">Proyectos</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="main">
+      <img class="profile" src="./assets/logo.jpg" alt="perfil">
+      <h2 class="main__title">Web engineer. JavaScript. React.js Node.js, Estudiante de Desarrollo de sistemas 💻| +51 912 212 077</h2>
+    </section>
+
+    <h2 class="categories__title"><span>https://platzi.com/@BrandoRodriguez </span><img src="https://static.platzi.com/media/flags/PE.png" alt="" height="18" class="ProfileHeader-flag"/>
+    </h2>
+    
+    <section class="busca">
+    <input  type="text" class="input" placeholder="skill, proyectos....">
+    </section>
+
+    <section id="#skill"  class="carousel">
+      <div class="carousel__container">
+    
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/diploma-prework_page-0001.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon"> 
+            </div>
+            <p class="carousel-item__details--title">Prework, Buenas practicas y entorno de desarrollo.</p>
+            <p class="carousel-item__details--subtitle">Duracion: 4 hras-2019</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/diploma-frontend-developer_page-0001.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Frontend developer</p>
+            <p class="carousel-item__details--subtitle">Duracion: 8 hras-2019</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/diploma-fundamentos-javascript-1.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>            
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Fundamentos de Javascritp</p>
+            <p class="carousel-item__details--subtitle">Duracion: 8 hras-2019</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/diploma-git-github-1.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Curso profesional de Git y Github</p>
+            <p class="carousel-item__details--subtitle">Duracion: 8 hras-2019</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/diploma-html-css-1.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Reforzamiento de Html y Css</p>
+            <p class="carousel-item__details--subtitle">Duracion: 4 hras-2019</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/diploma-react-1.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">React.js</p>
+            <p class="carousel-item__details--subtitle">Duracion: 12 hras-2019</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/diploma-pmi-1.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="./assets/play-icon.png" alt="Play Icon">
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Gestion de Proyectos</p>
+            <p class="carousel-item__details--subtitle">Duracion: 3 hras-2019</p>
+          </div>
+        </div>        
+      </div>
+    </section>
+    
+    <section id="#proyectos" class="carousel">
+      <div class="carousel__container">
+    
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/opt_adp_react_thumbnail.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon"> 
+            </div>
+            <p class="carousel-item__details--title">Gestion de Descanso medico</p>
+            <p class="carousel-item__details--subtitle">Empresa proporcionada por el Instituto</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/opt_bd_react.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon"> 
+            </div>
+            <p class="carousel-item__details--title">Sistema de Gestion Recursos_Textileria</p>
+            <p class="carousel-item__details--subtitle">Empresa Luan Textil</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="./assets/opt_mdp_react_thumbnail.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon"> 
+            </div>
+            <p class="carousel-item__details--title">Sistema de Alquiler Vehicular</p>
+            <p class="carousel-item__details--subtitle">Empresa Sysrean a Car</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+         <img class="carousel-item__img" src="./assets/opt_nudp_react_thumbnail.jpg" alt=""  />
+          <div class="carousel-item__details">
+            <div>
+              <img class="carousel-item__details--img" src="./assets/plus-icon.png" alt="Plus Icon"> 
+            </div>
+            <p class="carousel-item__details--title">Sistema de Planificacion de eventos</p>
+            <p class="carousel-item__details--subtitle">Empresa Dream events Club</p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+    <footer class="footer">
+      <a href="/">De LATAM 💙 Para el Mundo</a>
+    </footer>
+
 </body>
 </html>
