@@ -1,0 +1,172 @@
+/**********
+/* Grille - 960.gs
+**********/
+.container_16 {
+	max-width: 960px;
+	width: 92%;
+	margin: 0 auto;
+}
+.grid_6,
+.grid_8,
+.grid_10,
+.grid_16 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.container_16 .grid_6 {
+	width:35.5%;
+}
+
+.container_16 .grid_8 {
+	width:48.0%;
+}
+
+.container_16 .grid_10 {
+	width:60.5%;
+}
+
+.container_16 .grid_16 {
+	width:98.0%;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+
+/**********
+/* Header
+**********/
+	header[role=banner] {
+		background:#fff;
+		border-bottom:4px solid #2f32df;
+		padding: 19px 0;
+		overflow: hidden;
+	}
+	
+	header figure {
+		border: 3px solid #eee;
+		border-radius: 78px;
+		float: right;
+		height: 156px;
+		width: 156px;
+	}
+	
+	header figure img {
+		border-radius: 75px;
+		height: 150px;
+		position: relative;
+		width: 150px;
+	}
+	
+	header hgroup {
+		float: left;
+		padding: 42px 0;
+	}
+	
+	header hgroup h1 {
+		color:#555;
+		font-family:'DroidSansBold', Arial, sans-serif;
+	}
+	
+	header hgroup h2 {
+		color:#cecece;
+		font-style: italic;
+		text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+	}
+
+
+	
+/***************
+/* Corps - Main
+***************/
+	section[role=main] {
+		padding: 21px 0;
+		overflow: hidden;
+	}
+	
+	section[role=main] > div {
+		margin-top: 63px;
+	}
+	
+	section[role=main] h3 {
+		border-bottom: 1px solid #e1e1e1;
+		padding: 0 0 20px 60px;
+		margin-top: 0px;
+		position: relative;
+ 	}
+	
+	section[role=main] h3:after, h3:before {
+		content: ' ';
+		display: block;
+		height: 50px;
+		left: 0;
+		position: absolute;
+		top: -15px;
+		width: 50px;
+	}
+	
+	section[role=main] h3:before {
+		background-color: #e43535;
+		border-radius: 25px;
+	}
+	
+	
+	
+
+	
+	/************************************************
+	/* Affichage des compétences sous forme de barres
+	*************************************************/
+	.competences .barres li {
+		margin-bottom: 21px;
+		position: relative;
+	}
+	
+	.competences .barres li:after {
+		background: #9c9999;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		position: absolute;
+		width:100%;
+	}
+	
+	.competences .barres li span {
+		background: #2f32df;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		left: 0;
+		position: absolute;
+		width: inherit;
+		z-index: 1;
+	}
+	
+	
